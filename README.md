@@ -1,2 +1,2 @@
 # osusara.github.io
-My Personal Web
+This is my Personal Blog
