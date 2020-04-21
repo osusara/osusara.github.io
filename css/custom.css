@@ -1,0 +1,22 @@
+body {
+    background-image: url("../assets/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card {
+    border: none !important;
+    border-radius: 0.8rem !important;
+}
+
+.avatar {
+    width: 35% !important;
+    border: none !important;
+    border-radius: 50%;
+}
+
+.btn-circle {
+    border: none;
+    border-radius: 0.8rem;
+}
