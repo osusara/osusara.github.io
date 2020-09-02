@@ -6,8 +6,8 @@ import Blog from "./components/blog"
 
 function App() {
   return (
-    <div class="body">
-      <Layout>
+    <div className="body">
+      <Layout className="mx-4">
         <Blog />
       </Layout>
     </div>

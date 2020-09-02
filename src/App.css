@@ -5,6 +5,7 @@ body {
   height: 100% !important;
   width: 100% !important;
   scroll-behavior: smooth;
+  line-height: 1.2 !important;
 }
 
 .body {

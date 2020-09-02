@@ -3,18 +3,20 @@ import { Card } from "react-bootstrap";
 
 function BlogCard({ article }) {
   return (
-    <Card>
-      <div className="blog-div">
-        <Card.Img src={article.thumbnail} className="blog-img" />
-      </div>
-      <Card.Body>
-        <Card.Title>{article.title}</Card.Title>
-        <small>{article.pubDate}</small>
-        <Card.Link href={article.link} target="_blank">
-          Read More
-        </Card.Link>
-      </Card.Body>
-    </Card>
+    <a href={article.link} target="_blank" rel="noopener noreferrer">
+      <Card
+        className="blog-card m-2 shadow-sm"
+        style={{ backgroundImage: `url(${article.thumbnail})` }}
+      >
+        <Card.Body className="blog-body">
+          <p class="blog-text mb-auto">
+            <b>{article.title}</b>
+            <br />
+            <small>{article.pubDate}</small>
+          </p>
+        </Card.Body>
+      </Card>
+    </a>
   );
 }
 
