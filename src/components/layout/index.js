@@ -1,6 +1,6 @@
 import React from "react";
-import { Container } from "react-bootstrap";
-import "./style.css"
+import { Container, Row, Col } from "react-bootstrap";
+import "./style.css";
 
 import Header from "./Header";
 import Footer from "./Footer";
@@ -10,7 +10,11 @@ function Layout({ children }) {
     <>
       <Header />
       <Container fluid={true} className="main my-3">
-        <main>{children}</main>
+        <Row>
+          <Col md={10} xs={12} className="mx-auto">
+            <main>{children}</main>
+          </Col>
+        </Row>
       </Container>
       <Footer />
     </>

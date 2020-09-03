@@ -1,10 +1,15 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 
 function Contact() {
   return (
     <Container fluid={true}>
-      <p>Design Portfolio</p>
+      <Row>
+        <Col>
+          <h2 className="align-middle mt-3">Contacts</h2>
+        </Col>
+      </Row>
+      <hr className="mt-0" />
     </Container>
   );
 }

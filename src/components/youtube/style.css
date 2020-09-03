@@ -1,0 +1,34 @@
+.video-card {
+  height: 12rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 0.5rem !important;
+}
+
+.video-body {
+  height: 100%;
+  width: 5%;
+}
+
+.video-text {
+  max-width: 92%;
+  background: #ffffff;
+  padding: 3px 10px;
+  border-radius: 0.35rem;
+  position: absolute;
+  bottom: 4%;
+  left: 4%;
+}
+
+.video-card {
+  width: 100%;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("https://img.icons8.com/ios-glyphs/30/000000/arrow-pointing-left--v2.png") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("https://img.icons8.com/ios-glyphs/24/000000/long-arrow-right.png") !important;
+}
