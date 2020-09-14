@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { YOUTUBE_API_KEY, YOUTUBE_CHANNEL } from "../../secretsManager";
 import "./style.css";
 
-import Videos from "./Videos";
+import VideosCarousel from "./VideosCarousel";
 
 require("dotenv").config();
 
@@ -23,7 +23,7 @@ function Youtube() {
 
   return (
     <Container fluid={true}>
-      {isLoading ? (
+      {isLoading || !data.items ? (
         <h2>Videos Loading...</h2>
       ) : (
         <>
@@ -35,7 +35,7 @@ function Youtube() {
           <hr className="mt-0" />
           <Row>
             <Col lg={12} md={12} xs={12} className="my-3">
-              <Videos videos={data.items} />
+              <VideosCarousel videos={data.items} />
             </Col>
           </Row>
         </>

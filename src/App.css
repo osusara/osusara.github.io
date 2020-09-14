@@ -8,6 +8,10 @@ body {
   line-height: 1.2 !important;
 }
 
+a, a:hover {
+  text-decoration: none;
+}
+
 .body {
   padding: 0;
   margin: 0;
@@ -40,4 +44,32 @@ body {
   outline: none !important;
   outline-offset: none !important;
   box-shadow: none;
+}
+
+.bg-black {
+  background: #000000;
+}
+
+@media(max-width: 992px) {}
+
+@media(max-width: 768px) {}
+
+@media(max-width: 576px) {
+  .body {
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+
+  h5 {
+    font-size: 1rem
+  }
 }

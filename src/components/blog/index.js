@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./style.css";
 
-import BlogCard from "./BlogCrad";
+import BlogCard from "./BlogCard";
 import Profile from "./Profile";
 
 function Blog() {
@@ -15,12 +15,7 @@ function Blog() {
       .then((res) => res.json())
       .then((response) => {
         setData(response);
-        setLatest([
-          response.items[0],
-          response.items[1],
-          response.items[2],
-          response.items[3],
-        ]);
+        setLatest(response.items.slice(0, 8));
         setIsLoading(false);
       })
       .catch((err) => console.log(err));
@@ -43,7 +38,7 @@ function Blog() {
           <hr className="mt-0" />
           <Row>
             {latest.map((article) => (
-              <Col lg={3} md={3} xs={12} className="my-3">
+              <Col lg={3} md={3} xs={12} key={article.title} className="my-3">
                 <BlogCard article={article} />
               </Col>
             ))}
