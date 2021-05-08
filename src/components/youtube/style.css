@@ -1,3 +1,9 @@
+.yt-bg {
+  background: url("../../assets/yt-art.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
 .video-card {
   height: 12rem;
   background-position: center;
@@ -41,6 +47,19 @@
   background-image: url("https://img.icons8.com/ios-glyphs/24/000000/long-arrow-right.png") !important;
 }
 
+.yt-image {
+  border-radius: 50%;
+  width: 48px;
+}
+
+.subscribe-btn {
+  color: #e42626;
+}
+
+.subscribe-btn:hover {
+  color: #a31313;
+}
+
 .video-list-card {
   height: 9rem;
   width: 16rem;
@@ -54,7 +73,10 @@
   color: #000000;
 }
 
-@media(max-width: 576px) {
+@media (max-width: 900px) {
+}
+
+@media (max-width: 576px) {
   h1 {
     font-size: 2rem;
   }
@@ -64,7 +86,7 @@
   }
 
   h5 {
-    font-size: 1rem
+    font-size: 1rem;
   }
 
   .youtube-page {
@@ -76,5 +98,9 @@
   .video-list-card {
     height: 4.5rem;
     width: 8rem;
+  }
+
+  .yt-channel-link {
+    margin-top: 5px !important;
   }
 }

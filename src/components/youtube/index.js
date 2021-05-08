@@ -1,46 +1,71 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { YOUTUBE_API_KEY, YOUTUBE_CHANNEL } from "../../secretsManager";
 import "./style.css";
+import channelImage from "../../assets/yt-image.jpg";
 
 import VideosCarousel from "./VideosCarousel";
 
-require("dotenv").config();
-
 function Youtube() {
-  const [data, setData] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    fetch(`https://www.googleapis.com/youtube/v3/search?key=${YOUTUBE_API_KEY}&channelId=${YOUTUBE_CHANNEL}&part=snippet,id&order=date&maxResults=5`)
-      .then((res) => res.json())
-      .then((response) => {
-        setData(response);
-        setIsLoading(false);
-      })
-      .catch((err) => console.log(err));
-  }, []);
+  let videos = [
+    {
+      id: 1,
+      url: "https://www.youtube.com/embed/UHNfYSQpxa0",
+      title: "Haunted (Horror Short Film)",
+      description:
+        "Haunted is a horror short film by Ossa Films. 5 friends try to contact non-living entities and they get killed. Watch the full video.",
+    },
+    {
+      id: 2,
+      url: "https://www.youtube.com/embed/LN_HlJXcLNk",
+      title: "Ossa Vines Compilation 2",
+      description:
+        "Funny, Weird, Magical vines compilation by Ossa Films. If you like it, give it a thumbs up and comment and share :)",
+    },
+    {
+      id: 3,
+      url: "https://www.youtube.com/embed/U-WVZme3au0",
+      title: "One Day Trip to Singapore 'ඒක වෙනම ලෝකයක්'",
+      description:
+        "One day trip to Singapore. In my trip, we visited mainly Universal Studio and to see some landmarks. #Singapore​ #SriLanka​ #OSSAFILMS",
+    },
+  ];
 
   return (
-    <Container fluid={true}>
-      {isLoading || !data.items ? (
-        <h2>Videos Loading...</h2>
-      ) : (
-        <>
-          <Row>
-            <Col>
-              <h2 className="align-middle mt-3">Video Contents</h2>
-            </Col>
-          </Row>
-          <hr className="mt-0" />
-          <Row>
-            <Col lg={12} md={12} xs={12} className="my-3">
-              <VideosCarousel videos={data.items} />
-            </Col>
-          </Row>
-        </>
-      )}
-    </Container>
+    <div id="youtube-section" className="py-5 yt-bg">
+      <Container>
+        <Row>
+          <Col className="my-auto">
+            <h2 className="align-middle text-light my-auto mt-3">YouTube Channel</h2>
+          </Col>
+          <Col md="auto" className="my-auto">
+            <Row className="my-auto yt-channel-link">
+              <Col md="auto" xs="auto">
+                <img className="yt-image" src={channelImage} alt="Channel" />
+              </Col>
+              <Col className="my-auto pl-0">
+                <h6 className="mb-0 text-light">OSSA - ඔස්සා</h6>
+                <a
+                  className="subscribe-btn"
+                  href="https://www.youtube.com/channel/UCN6Y4LVrJqi6xL5W3QFpI3A?sub_confirmation=1"
+                >
+                  Subscribe
+                </a>
+              </Col>
+            </Row>
+          </Col>
+        </Row>
+        <hr className="bg-light" />
+
+          <p className="text-center text-light">
+            After the Advanced Level exams, I started this channel just as a
+            hobby (video editing is one of my hobbies). OSSA - ඔස්සා channel
+            cannot categorize specifically. I tried different things such as
+            compilations, vlogs, musicals, short films and advanced visual
+            effects. Feel free to visit there too and consider subscribing ;)
+          </p>
+          <VideosCarousel videos={videos} />
+        </Container>
+    </div>
   );
 }
 

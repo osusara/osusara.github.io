@@ -5,7 +5,7 @@ function Header() {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <Container fluid={true} className="bg-white fixed-top mb-2 navbar-fix">
+    <Container className="bg-white fixed-top mb-2 navbar-fix">
       <Navbar expand="lg" className="container navbar-light navbar-fix">
         <Navbar.Brand href="#" className="brand-link">
           osusara

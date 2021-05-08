@@ -29,30 +29,17 @@
   margin: 10px;
 }
 
-.profile-link {
-  color: black;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.2rem;
+.m-image {
+  border-radius: 50%;
+  width: 48px;
 }
 
-.profile-link:hover {
-  color: black;
-  text-decoration: none;
+.stories-btn {
+  color: rgb(179, 122, 17);
 }
 
-.profile-link-description {
-  color: black;
-  text-decoration: none;
-}
-
-.profile-link-description:hover {
-  color: black;
-  text-decoration: none;
-}
-
-.profile-image {
-  height: 3rem;
+.stories-btn:hover {
+  color: rgb(138, 90, 2);
 }
 
 .blog-carousel-card {
@@ -62,4 +49,25 @@
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 0.5rem !important;
+}
+
+@media (max-width: 900px) {
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+
+  .m-page-link {
+    margin-top: 5px !important;
+  }
 }

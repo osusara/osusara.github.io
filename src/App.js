@@ -12,7 +12,7 @@ function App() {
       <Layout className="mx-4">
         <Blog />
         <Youtube />
-        <Contact />
+        {/* <Contact /> */}
       </Layout>
     </div>
   );

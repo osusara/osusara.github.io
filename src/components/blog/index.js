@@ -3,7 +3,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import "./style.css";
 
 import BlogCard from "./BlogCard";
-import Profile from "./Profile";
 
 function Blog() {
   const [data, setData] = useState([]);
@@ -11,7 +10,7 @@ function Blog() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@osusarakammalawatta`)
+    fetch(`https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@osusarak`)
       .then((res) => res.json())
       .then((response) => {
         setData(response);
@@ -22,23 +21,39 @@ function Blog() {
   }, []);
 
   return (
-    <Container fluid={true} id="blog-section">
+    <Container id="blog-section" className="my-3">
       {isLoading ? (
         <h2>Blogs Loading...</h2>
       ) : (
         <>
           <Row>
-            <Col>
-              <h2 className="align-middle mt-3">Blogs</h2>
+            <Col className="my-auto">
+              <h2 className="align-middle my-auto mt-3">Medium Stories</h2>
             </Col>
-            <Col md="auto" xs={12}>
-              <Profile feed={data.feed} className="m-auto" />
+            <Col md="auto" className="my-auto">
+              <Row className="my-auto m-page-link">
+                <Col md="auto" xs="auto">
+                  <img className="m-image" src={data.feed.image} alt="Page" />
+                </Col>
+                <Col className="my-auto pl-0">
+                  <h6 className="mb-0">@osusarak</h6>
+                  <a
+                    className="stories-btn"
+                    href={data.feed.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    More Stories
+                  </a>
+                </Col>
+              </Row>
             </Col>
           </Row>
-          <hr className="mt-0" />
+
+          <hr />
           <Row>
             {latest.map((article) => (
-              <Col lg={3} md={3} xs={12} key={article.title} className="my-3">
+              <Col lg={3} md={4} xs={12} key={article.title} className="my-3">
                 <BlogCard article={article} />
               </Col>
             ))}
