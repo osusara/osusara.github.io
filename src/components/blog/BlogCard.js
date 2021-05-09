@@ -9,7 +9,7 @@ function BlogCard({ article }) {
         style={{ backgroundImage: `url(${article.thumbnail})` }}
       >
         <Card.Body className="blog-body">
-          <p class="blog-text mb-auto">
+          <p className="blog-text mb-auto">
             <b>{article.title}</b>
             <br />
             <small>{article.pubDate}</small>

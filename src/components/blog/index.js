@@ -4,13 +4,13 @@ import "./style.css";
 
 import BlogCard from "./BlogCard";
 
-function Blog() {
+function Blog({ medium }) {
   const [data, setData] = useState([]);
   const [latest, setLatest] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@osusarak`)
+    fetch(medium.url)
       .then((res) => res.json())
       .then((response) => {
         setData(response);
@@ -51,9 +51,10 @@ function Blog() {
           </Row>
 
           <hr />
+          <p>{medium.description}</p>
           <Row>
             {latest.map((article) => (
-              <Col lg={3} md={4} xs={12} key={article.title} className="my-3">
+              <Col lg={3} md={4} xs={6} key={article.title} className="my-3 artical-card">
                 <BlogCard article={article} />
               </Col>
             ))}

@@ -1,0 +1,55 @@
+{
+  "instagram": {
+    "username": "design_by.ossa",
+    "description": "As a hobby I do motion/graphics designing, UIUX 💻. These are some of them. Visit my Instagram design portfolio to see more and don't forget to follow.",
+    "image": "./assets/ig-image.jpg",
+    "url": "https://www.instagram.com/design_by.ossa",
+    "designs": [
+      {
+        "id": "1",
+        "caption": "Design concept for a Login page #uiux #userexperience #uidesign #adobe #photoshop #xd #illustration #purple #web #webdesign #ossauiux #graphicdesign #login #design #email #password #usability",
+        "url": "./assets/ig-1.png"
+      },
+      {
+        "id": "2",
+        "caption": "Designed for the Sustanable Educational Foundation’s new website’s Careers page #uiux #ui #ux #design #webdesign #webdevelopment #graphicdesign #interactivedesign #minimal #adobexd #illustrator #xd #web #sef #careers",
+        "url": "./assets/ig-2.png"
+      },
+      {
+        "id": "3",
+        "caption": "Concept design for a recording studio 🎙 *Background assets from Unsplash.com*  #music #studio #web #ui #ux #uiux #webdesign #webdevelopment #adobe #xd #adobexd #web #userinterface #userexperience",
+        "url": "./assets/ig-3.png"
+      }
+    ]
+  },
+  "medium": {
+    "description": "This is how I share what I learn.",
+    "url": "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@osusarak"
+  },
+  "youtube": {
+    "channel": "OSSA - ඔස්සා",
+    "description": "After the Advanced Level exams, I started this channel just as a hobby (video editing is one of my hobbies). OSSA - ඔස්සා channel cannot categorize specifically. I tried different things such as compilations, vlogs, musicals, short films and advanced visual effects. Feel free to visit there too and consider subscribing ;)",
+    "image": "./assets/yt-image.jpg",
+    "subscribe": "https://www.youtube.com/channel/UCN6Y4LVrJqi6xL5W3QFpI3A?sub_confirmation=1",
+    "videos": [
+      {
+        "id": 1,
+        "url": "https://www.youtube.com/embed/UHNfYSQpxa0",
+        "title": "Haunted (Horror Short Film)",
+        "description": "Haunted is a horror short film by Ossa Films. 5 friends try to contact non-living entities and they get killed. Watch the full video."
+      },
+      {
+        "id": 2,
+        "url": "https://www.youtube.com/embed/LN_HlJXcLNk",
+        "title": "Ossa Vines Compilation 2",
+        "description": "Funny, Weird, Magical vines compilation by Ossa Films. If you like it, give it a thumbs up and comment and share :)"
+      },
+      {
+        "id": 3,
+        "url": "https://www.youtube.com/embed/U-WVZme3au0",
+        "title": "One Day Trip to Singapore 'ඒක වෙනම ලෝකයක්'",
+        "description": "One day trip to Singapore. In my trip, we visited mainly Universal Studio and to see some landmarks. #Singapore​ #SriLanka​ #OSSAFILMS"
+      }
+    ]
+  }
+}

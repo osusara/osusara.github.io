@@ -42,15 +42,6 @@
   color: rgb(138, 90, 2);
 }
 
-.blog-carousel-card {
-  width: 32rem;
-  height: 18rem;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 0.5rem !important;
-}
-
 @media (max-width: 900px) {
 }
 
@@ -69,5 +60,10 @@
 
   .m-page-link {
     margin-top: 5px !important;
+  }
+
+  .artical-card {
+    padding: 0 5px;
+    margin: 5px auto !important;
   }
 }

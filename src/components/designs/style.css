@@ -1,0 +1,34 @@
+.ig-images-div {
+  position: relative !important;
+  text-align: center;
+}
+
+.ig-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ig-cards img {
+  -webkit-transition: opacity 0.5s ease-out;
+  -moz-transition: opacity 0.5s ease-out;
+  -o-transition: opacity 0.5s ease-out;
+  transition: opacity 0.5s ease-out;
+}
+
+.ig-cards .ig-caption {
+  -webkit-transition: opacity 0.5s ease-out;
+  -moz-transition: opacity 0.5s ease-out;
+  -o-transition: opacity 0.5s ease-out;
+  transition: opacity 0.5s ease-out;
+  opacity: 0;
+}
+
+.ig-cards:hover img {
+  opacity: 0.1;
+}
+
+.ig-cards:hover .ig-caption {
+  opacity: 1;
+}
