@@ -1,4 +1,9 @@
 {
+  "github": {
+    "url": "https://github.com/osusara",
+    "profile_api": "https://api.github.com/users/osusara",
+    "repos_api": "https://gh-pinned-repos-5l2i19um3.vercel.app/?username=osusara"
+  },
   "instagram": {
     "username": "design_by.ossa",
     "description": "As a hobby I do motion/graphics designing, UIUX 💻. These are some of them. Visit my Instagram design portfolio to see more and don't forget to follow.",
@@ -23,8 +28,8 @@
     ]
   },
   "medium": {
-    "description": "This is how I share what I learn.",
-    "url": "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@osusarak"
+    "url": "https://medium.com/@osusarak",
+    "api": "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@osusarak"
   },
   "youtube": {
     "channel": "OSSA - ඔස්සා",

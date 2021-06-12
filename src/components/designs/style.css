@@ -32,3 +32,11 @@
 .ig-cards:hover .ig-caption {
   opacity: 1;
 }
+
+.ig-link {
+ color: #C850C0;
+}
+
+.ig-link:hover {
+ color: #4158D0;
+}

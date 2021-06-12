@@ -1,9 +1,14 @@
+.blog-bg {
+  background-image: linear-gradient( 135deg, #FDEB71 10%, #e6d14b 100%);
+}
+
 .blog-card {
   height: 12rem;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 0.5rem !important;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.25) !important;
 }
 
 .blog-body {
@@ -25,6 +30,14 @@
   color: #7c7c7c;
 }
 
+.blog-text b {
+  color: #524c38;
+}
+
+.blog-card:hover .blog-text b{
+  color: #dbb32f;
+}
+
 .media-div {
   margin: 10px;
 }
@@ -35,11 +48,11 @@
 }
 
 .stories-btn {
-  color: rgb(179, 122, 17);
+  color: rgb(255, 255, 255);
 }
 
 .stories-btn:hover {
-  color: rgb(138, 90, 2);
+  color: rgb(219, 187, 126);
 }
 
 @media (max-width: 900px) {

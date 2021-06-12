@@ -1,0 +1,23 @@
+.projects-section {
+  background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+}
+
+.project-card {
+  position: relative;
+  height: 100%;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.project-stats {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+
+.gh-link {
+  color:rgb(95, 169, 175);
+}
+
+.gh-link:hover {
+  color:rgb(53, 109, 114);
+}

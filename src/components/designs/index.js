@@ -23,12 +23,12 @@ function Designs({ instagram }) {
                 <Col className="my-auto pl-0">
                   <h6 className="mb-0">{instagram.username}</h6>
                   <a
-                    className="follow-btn"
+                    className="ig-link"
                     href={instagram.url}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Follow
+                    Instagram
                   </a>
                 </Col>
               </Row>
