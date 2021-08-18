@@ -27,9 +27,9 @@ function Blog({ medium }) {
   }, []);
 
   return (
-    <div id="blog-section" className="py-5 blog-bg">
-      <Container>
-        <Col>
+    <Container fluid={true} className="blog-bg">
+      <div id="blog-section" className="py-5">
+        <Container>
           <Row>
             <Col className="my-auto">
               <h2 className="align-middle my-auto mt-3">Medium Stories</h2>
@@ -90,9 +90,9 @@ function Blog({ medium }) {
               )}
             </Row>
           )}
-        </Col>
-      </Container>
-    </div>
+        </Container>
+      </div>
+    </Container>
   );
 }
 

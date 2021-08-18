@@ -31,7 +31,7 @@ function Projects({ github }) {
 
   return (
     <Container className="projects-section" fluid={true}>
-      <div id="design-section" className="py-5">
+      <div id="projects-section" className="py-5">
         <Container>
           <Row>
             <Col className="my-auto">

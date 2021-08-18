@@ -1,6 +1,7 @@
 import React from "react";
-import "./App.css";
 import data from "./config.json"
+import "./App.css";
+
 import Layout from "./components/layout"
 import Blog from "./components/blog"
 import Projects from "./components/projects"
@@ -16,7 +17,7 @@ function App() {
         <Blog medium={data.medium} />
         <Designs instagram={data.instagram} />
         <Youtube youtube={data.youtube} />
-        {/* <Contact /> */}
+        <Contact />
       </Layout>
     </div>
   );
