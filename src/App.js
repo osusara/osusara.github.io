@@ -3,6 +3,7 @@ import data from "./config.json"
 import "./App.css";
 
 import Layout from "./components/layout"
+import Landing from "./components/landing"
 import Blog from "./components/blog"
 import Projects from "./components/projects"
 import Designs from "./components/designs"
@@ -13,9 +14,10 @@ function App() {
   return (
     <div className="body">
       <Layout className="mx-4">
+        <Landing />
         <Projects github={data.github} />
         <Blog medium={data.medium} />
-        <Designs instagram={data.instagram} />
+        <Designs behance={data.behance} />
         <Youtube youtube={data.youtube} />
         <Contact />
       </Layout>

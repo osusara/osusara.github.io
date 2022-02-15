@@ -1,54 +1,67 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import "./style.css";
+import styles from "./design.module.css";
 
-function Designs({ instagram }) {
+function Designs({ behance }) {
   return (
-    <Container fluid={true}>
-      <div id="design-section" className="py-5">
+    <Container fluid={true} className={styles.design_bg}>
+      <div id="design-section" className="py-5 text-light">
         <Container>
           <Row>
             <Col className="my-auto">
               <h2 className="align-middle my-auto mt-3">Design Portfolio</h2>
             </Col>
             <Col md="auto" className="my-auto">
-              <Row className="my-auto yt-channel-link">
+              <Row className="my-auto profile-link">
                 <Col md="auto" xs="auto">
                   <img
-                    className="yt-image"
-                    src={instagram.image}
+                    className="profile-image"
+                    src={behance.image}
                     alt="Channel"
                   />
                 </Col>
                 <Col className="my-auto pl-0">
-                  <h6 className="mb-0">{instagram.username}</h6>
+                  <h6 className="mb-0">{behance.username}</h6>
                   <a
-                    className="ig-link"
-                    href={instagram.url}
+                    className={styles.b_link}
+                    href={behance.url}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Instagram
+                    Behance
                   </a>
                 </Col>
               </Row>
             </Col>
           </Row>
           <hr className="bg-light" />
-          <p>{instagram.description}</p>
+          <p>{behance.description}</p>
 
           <Row>
-            {instagram.designs.map((design) => (
+            {behance.designs.map((design) => (
               <Col
                 key={design.id}
                 md={4}
                 xs={12}
-                className="p-1 ig-cards"
+                className={`py-1 px-3 ${styles.b_cards}`}
               >
-                <div className="ig-images-div">
-                  <img src={design.url} className="w-100" alt="nothing" />
-                  <p className="ig-caption w-100 px-3">{design.caption}</p>
-                </div>
+                <a
+                  href={design.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.b_images_div}
+                >
+                  <img
+                    src={design.image}
+                    className={`${styles.b_img} w-100`}
+                    alt="nothing"
+                  />
+                  <img
+                    src={design.caption}
+                    className={`${styles.b_caption} w-100`}
+                    alt="nothing"
+                  />
+                </a>
               </Col>
             ))}
           </Row>

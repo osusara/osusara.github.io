@@ -1,8 +1,12 @@
-.blog-bg {
+.blog_bg {
   background-image: linear-gradient( 135deg, #FDEB71 10%, #e6d14b 100%);
+  border-radius: 25px 25px 0 0;
+  margin-top: -25px;
+  padding-bottom: 25px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5) !important;
 }
 
-.blog-card {
+.blog_card {
   height: 12rem;
   background-position: center;
   background-size: cover;
@@ -15,12 +19,12 @@
   transition: all 0.3s ease-out;
 }
 
-.blog-body {
+.blog_body {
   height: 100%;
   width: 5%;
 }
 
-.blog-text {
+.blog_text {
   max-width: 92%;
   background: #ffffff;
   padding: 3px 10px;
@@ -30,11 +34,11 @@
   left: 4%;
 }
 
-.blog-text small {
+.blog_text small {
   color: #7c7c7c;
 }
 
-.blog-text b {
+.blog_text b {
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
@@ -42,29 +46,24 @@
   color: #524c38;
 }
 
-.blog-card:hover {
+.blog_card:hover {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5) !important;
 }
 
-.blog-card:hover .blog-text b{
-  color: #dbb32f;
+.blog_card:hover .blog_text b{
+  color: #917a2f;
 }
 
-.media-div {
+.media_div {
   margin: 10px;
 }
 
-.m-image {
-  border-radius: 50%;
-  width: 48px;
+.stories_btn {
+  color: rgb(0, 0, 0);
 }
 
-.stories-btn {
-  color: rgb(255, 255, 255);
-}
-
-.stories-btn:hover {
-  color: rgb(219, 187, 126);
+.stories_btn:hover {
+  color: rgb(80, 70, 51);
 }
 
 @media (max-width: 900px) {
@@ -83,11 +82,7 @@
     font-size: 1rem;
   }
 
-  .m-page-link {
-    margin-top: 5px !important;
-  }
-
-  .artical-card {
+  .artical_card {
     padding: 0 5px;
     margin: 5px auto !important;
   }

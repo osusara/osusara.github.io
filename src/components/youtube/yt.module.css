@@ -1,10 +1,13 @@
-.yt-bg {
+.yt_bg {
   background: url("../../assets/yt-art.jpg");
   background-size: cover;
   background-position: center;
+  border-radius: 25px 25px 0 0;
+  margin-top: -25px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5) !important;
 }
 
-.video-card {
+.video_card {
   height: 12rem;
   background-position: center;
   background-size: cover;
@@ -12,12 +15,12 @@
   border-radius: 0.5rem !important;
 }
 
-.video-body {
+.video_body {
   height: 100%;
   width: 5%;
 }
 
-.video-text {
+.video_text {
   max-width: 92%;
   background: #ffffff;
   padding: 3px 10px;
@@ -27,40 +30,19 @@
   left: 4%;
 }
 
-.video-card {
+.video_card {
   width: 100%;
 }
 
-.carousel-control-prev {
-  display: none;
+.subscribe_btn {
+  color: #f36a6a;
 }
 
-.carousel-control-next {
-  display: none;
+.subscribe_btn:hover {
+  color: #a77878;
 }
 
-.carousel-control-prev-icon {
-  background-image: url("https://img.icons8.com/ios-glyphs/30/000000/arrow-pointing-left--v2.png") !important;
-}
-
-.carousel-control-next-icon {
-  background-image: url("https://img.icons8.com/ios-glyphs/24/000000/long-arrow-right.png") !important;
-}
-
-.yt-image {
-  border-radius: 50%;
-  width: 48px;
-}
-
-.subscribe-btn {
-  color: #e42626;
-}
-
-.subscribe-btn:hover {
-  color: #a31313;
-}
-
-.video-list-card {
+.video_list_card {
   height: 9rem;
   width: 16rem;
   background-position: center;
@@ -69,7 +51,7 @@
   border-radius: 0.5rem !important;
 }
 
-.video-link {
+.video_link {
   color: #000000;
 }
 
@@ -89,18 +71,14 @@
     font-size: 1rem;
   }
 
-  .youtube-page {
+  .youtube_page {
     font-size: 0.8rem;
     margin: 0;
     padding: 0;
   }
 
-  .video-list-card {
+  .video_list_card {
     height: 4.5rem;
     width: 8rem;
-  }
-
-  .yt-channel-link {
-    margin-top: 5px !important;
   }
 }

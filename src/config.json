@@ -4,26 +4,29 @@
     "profile_api": "https://api.github.com/users/osusara",
     "repos_api": "https://gh-pinned-repos-5l2i19um3.vercel.app/?username=osusara"
   },
-  "instagram": {
-    "username": "design_by.ossa",
-    "description": "As a hobby I do motion/graphics designing, UIUX 💻. These are some of them. Visit my Instagram design portfolio to see more and don't forget to follow.",
-    "image": "./assets/ig-image.jpg",
-    "url": "https://www.instagram.com/design_by.ossa",
+  "behance": {
+    "username": "osusara",
+    "description": "As a hobby I do motion/graphics designing, UIUX 💻. These are some of them. Visit my Behance design portfolio to see more and don't forget to follow.",
+    "image": "./assets/b-image.png",
+    "url": "https://www.behance.net/osusara",
     "designs": [
       {
         "id": "1",
-        "caption": "Design concept for a Login page #uiux #userexperience #uidesign #adobe #photoshop #xd #illustration #purple #web #webdesign #ossauiux #graphicdesign #login #design #email #password #usability",
-        "url": "./assets/ig-1.png"
+        "caption": "./assets/b-1i.png",
+        "image": "./assets/b-1.png",
+        "url": "https://www.behance.net/gallery/127676863/Design-done-for-architecture-designing-company"
       },
       {
         "id": "2",
-        "caption": "Designed for the Sustanable Educational Foundation’s new website’s Careers page #uiux #ui #ux #design #webdesign #webdevelopment #graphicdesign #interactivedesign #minimal #adobexd #illustrator #xd #web #sef #careers",
-        "url": "./assets/ig-2.png"
+        "caption": "./assets/b-2i.png",
+        "image": "./assets/b-2.png",
+        "url": "https://www.behance.net/gallery/127676351/Design-concept-for-a-landing-page"
       },
       {
         "id": "3",
-        "caption": "Concept design for a recording studio 🎙 *Background assets from Unsplash.com*  #music #studio #web #ui #ux #uiux #webdesign #webdevelopment #adobe #xd #adobexd #web #userinterface #userexperience",
-        "url": "./assets/ig-3.png"
+        "caption": "./assets/b-3i.png",
+        "image": "./assets/b-3.png",
+        "url": "https://www.behance.net/gallery/127676275/Design-concept-for-printing-shop"
       }
     ]
   },

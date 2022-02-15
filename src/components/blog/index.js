@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Spinner } from "react-bootstrap";
-import "./style.css";
+import styles from "./blog.module.css";
 
 import BlogCard from "./BlogCard";
 
@@ -27,7 +27,7 @@ function Blog({ medium }) {
   }, []);
 
   return (
-    <Container fluid={true} className="blog-bg">
+    <Container fluid={true} className={styles.blog_bg}>
       <div id="blog-section" className="py-5">
         <Container>
           <Row>
@@ -38,14 +38,18 @@ function Blog({ medium }) {
               <Spinner animation="grow" className="m-auto" size="sm" />
             ) : (
               <Col md="auto" className="my-auto">
-                <Row className="my-auto m-page-link">
+                <Row className="my-auto profile_link">
                   <Col md="auto" xs="auto">
-                    <img className="m-image" src={data.feed.image} alt="Page" />
+                    <img
+                      className="profile-image"
+                      src={data.feed.image}
+                      alt="Page"
+                    />
                   </Col>
                   <Col className="my-auto pl-0">
                     <h6 className="mb-0">@osusarak</h6>
                     <a
-                      className="stories-btn"
+                      className={styles.stories_btn}
                       href={data.feed.url}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -66,7 +70,7 @@ function Blog({ medium }) {
               <h5>{error.msg}</h5>
               <p>
                 Visit:{" "}
-                <a className="stories-btn" href={medium.url}>
+                <a className={styles.stories_btn} href={medium.url}>
                   {medium.url}
                 </a>
               </p>
@@ -82,7 +86,7 @@ function Blog({ medium }) {
                     md={4}
                     xs={6}
                     key={article.title}
-                    className="my-3 artical-card"
+                    className={`my-3 ${styles.artical_card}`}
                   >
                     <BlogCard article={article} />
                   </Col>
