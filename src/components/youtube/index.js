@@ -12,7 +12,7 @@ function Youtube({ youtube }) {
           <Row>
             <Col className="my-auto">
               <h2 className="align-middle text-light my-auto mt-3">
-                YouTube Channel
+                Video Contents
               </h2>
             </Col>
             <Col md="auto" className="my-auto">
@@ -28,7 +28,7 @@ function Youtube({ youtube }) {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Subscribe
+                    Youtube channel
                   </a>
                 </Col>
               </Row>

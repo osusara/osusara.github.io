@@ -10,24 +10,15 @@ function Projects({ github }) {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch(github.repos_api)
-      .then((res) => res.json())
-      .then((response) => {
-        setRepos(response);
-        fetch(github.profile_api)
-          .then((res) => res.json())
-          .then((response) => {
-            setProfile(response);
-          })
-          .then(() => setIsLoading(false));
-      })
-      .catch((err) =>
-        setError({
-          error: err,
-          msg: "Sorry Something went wrong while fetching projects",
-        })
-      );
+    getProfile();
   }, []);
+
+  const getProfile = async () => {
+    const res = await fetch(github.profile_api);
+    const data = await res.json();
+    setProfile(data);
+    setIsLoading(false);
+  }
 
   return (
     <Container className="projects-section" fluid={true}>
@@ -41,10 +32,10 @@ function Projects({ github }) {
               <Spinner animation="grow" className="m-auto" size="sm" />
             ) : (
               <Col md="auto" className="my-auto">
-                <Row className="my-auto yt-channel-link">
+                <Row className="my-auto profile-link">
                   <Col md="auto" xs="auto">
                     <img
-                      className="yt-image"
+                      className="profile-image"
                       src={profile.avatar_url}
                       alt="Channel"
                     />

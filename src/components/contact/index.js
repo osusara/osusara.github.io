@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import {
-  FaPhone,
   FaEnvelope,
   FaFacebook,
   FaLinkedin,
@@ -40,42 +39,48 @@ function Contact() {
             </Col>
             <Col md={6} xs={12}>
               <Row className="m-auto">
-                <a href="facebook.com/osusara" className="mx-auto">
+                <a href="https://facebook.com/osusara" className="mx-auto">
                   <Card className="social-icon">
                     <Card.Body className="text-center px-2 contact-text">
                       <FaFacebook />
                     </Card.Body>
                   </Card>
                 </a>
-                <a href="facebook.com/osusara" className="mx-auto">
+                <a href="https://linkedin.com/in/osusara" className="mx-auto">
                   <Card className="social-icon">
                     <Card.Body className="text-center px-2 contact-text">
                       <FaLinkedin />
                     </Card.Body>
                   </Card>
                 </a>
-                <a href="facebook.com/osusara" className="mx-auto">
+                <a href="https://twitter.com/kammalawatta" className="mx-auto">
                   <Card className="social-icon">
                     <Card.Body className="text-center px-2 contact-text">
                       <FaTwitter />
                     </Card.Body>
                   </Card>
                 </a>
-                <a href="facebook.com/osusara" className="mx-auto">
+                <a
+                  href="https://instagram.com/osusara.kammalawatta"
+                  className="mx-auto"
+                >
                   <Card className="social-icon">
                     <Card.Body className="text-center px-2 contact-text">
                       <FaInstagram />
                     </Card.Body>
                   </Card>
                 </a>
-                <a href="facebook.com/osusara" className="mx-auto">
+                <a href="https://behance.com/osusara" className="mx-auto">
                   <Card className="social-icon">
                     <Card.Body className="text-center px-2 contact-text">
                       <FaBehance />
                     </Card.Body>
                   </Card>
                 </a>
-                <a href="facebook.com/osusara" className="mx-auto">
+                <a
+                  href="https://youtube.com.com/osusarakammalawatta"
+                  className="mx-auto"
+                >
                   <Card className="social-icon">
                     <Card.Body className="text-center px-2 contact-text">
                       <FaYoutube />

@@ -24,7 +24,7 @@ function Blog({ medium }) {
           msg: "Sorry Something went wrong while fetching blogs",
         })
       );
-  }, []);
+  }, [medium]);
 
   return (
     <Container fluid={true} className={styles.blog_bg}>
@@ -32,7 +32,7 @@ function Blog({ medium }) {
         <Container>
           <Row>
             <Col className="my-auto">
-              <h2 className="align-middle my-auto mt-3">Medium Stories</h2>
+              <h2 className="align-middle my-auto mt-3">Tech Articles</h2>
             </Col>
             {isLoading ? (
               <Spinner animation="grow" className="m-auto" size="sm" />
@@ -54,7 +54,7 @@ function Blog({ medium }) {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      More Stories
+                      Medium Page
                     </a>
                   </Col>
                 </Row>
