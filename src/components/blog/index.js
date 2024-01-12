@@ -79,7 +79,11 @@ function Blog({ medium }) {
             <Row>
               {latest.map((article) =>
                 isLoading ? (
-                  <Spinner animation="grow" className="m-auto" />
+                  <Spinner
+                    key={article.title}
+                    animation="grow"
+                    className="m-auto"
+                  />
                 ) : (
                   <Col
                     lg={3}

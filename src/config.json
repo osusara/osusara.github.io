@@ -1,8 +1,28 @@
 {
-  "github": {
-    "url": "https://github.com/osusara",
-    "profile_api": "https://api.github.com/users/osusara",
-    "repos_api": "https://gh-pinned-repos-5l2i19um3.vercel.app/?username=osusara"
+  "projects": {
+    "github_url": "https://github.com/osusara",
+    "github_profile_api": "https://api.github.com/users/osusara",
+    "items": [
+      {
+        "id": 1,
+        "title": "FitSL Mobile Application",
+        "description": "A fitness training mobile application. Startup project. Joined as a full-stack developer",
+        "technologies": ["Flutter", "Firebase"]
+      },
+      {
+        "id": 2,
+        "title": "DevGrade React Template",
+        "description": "DevGrade is a framework initiated by 99x that evaluate job applicants. Created React JS template with test cases",
+        "technologies": ["React JS", "Redux"]
+      },
+      {
+        "id": 3,
+        "url": "https://github.com/osusara/made-in-sl",
+        "title": "Made in Sri Lanka",
+        "description": "An E-commerce web site to expose local products to foreign markets. An individual project in university and doing for a client’s requirements.",
+        "technologies": ["React JS", "Node JS", "Express", "Redux", "MongoDB"]
+      }
+    ]
   },
   "behance": {
     "username": "osusara",

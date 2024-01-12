@@ -16,7 +16,7 @@ function Header() {
           aria-controls="basic-navbar-nav"
           onClick={(e) => setToggle(!toggle)}
         >
-          <button
+          <span
             className={`btn toggle-inner-button-fix hamburger hamburger--slider ${
               toggle ? "is-active" : ""
             } `}
@@ -24,7 +24,7 @@ function Header() {
             <span className="hamburger-box">
               <span className="hamburger-inner"></span>
             </span>
-          </button>
+          </span>
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav navbar-fix">
           <Nav className="ml-auto">

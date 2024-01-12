@@ -6,11 +6,11 @@ function Landing() {
   return (
     <Container fluid={true}>
       <Row>
-        <p className="mx-auto text-center">
+        <div className="mx-auto text-center">
           <h1>Osusara Kammalawatta</h1>
           An undergraduate in Information Systems at SUSL. I’m a developer, a
           designer and a content creator.
-        </p>
+        </div>
       </Row>
       <Row>
         <Col>

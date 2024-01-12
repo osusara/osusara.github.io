@@ -15,7 +15,7 @@ function App() {
     <div className="body">
       <Layout className="mx-4">
         <Landing />
-        <Projects github={data.github} />
+        <Projects projects={data.projects} />
         <Blog medium={data.medium} />
         <Designs behance={data.behance} />
         <Youtube youtube={data.youtube} />
